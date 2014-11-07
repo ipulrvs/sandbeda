@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html class="app">
+<head>
+	<title>New Web Project</title>
+
+	<!-- Style Begin -->
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/hover.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+	<!-- Style End -->
+
+	<!-- Plugin Begin -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<script src="js/jquery.dataTables.js"></script>
+	<script src="js/bootstrap-growl.js"></script>
+	<script src="js/dataTables.bootstrap.js"></script>
+	<script src="js/sweet-alert.js"></script>
+	<script src="js/sidebar.js"></script>
+	<!-- Plugin End -->
+</head>
+<body class="sidebar-push">
+
+<section class="vertical-page">
+	<header class="header">
+		<div class="navbar navbar-default navbar-fixed-top navbar-border">
+			<div class="navbar-header">
+				<a class="navbar-brand navbar-brand-title">App.Name 
+					<i class="icon glyphicon glyphicon-home onright"></i>
+				</a>
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="">Link <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="">Dropdown Link</a></li>
+								<li class="divider"></li>
+								<li><a href="">Dropdown Link</a></li>
+						</ul>
+					</li>
+					<li><a href="">Link</a></li>
+				</ul>
+				<ul style="margin: 0px;" class="nav navbar-nav navbar-right">
+					<li><a href="">Link</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section>
+		<section class="horizontal-page stretch">
+			<section id="content">
+				<section class="vertical-page">
+					<header class="header">
+						<ol class="breadcrumb">
+							<li><a href="#">Home</a></li>
+							<li class="active">Dashboard</li>
+						</ol>
+					</header>
+					<section>
+						<section class="horizontal-page stretch">
+							<section class="vertical-page">
+								<section class="scrollable wrapper">
+
+									<h2 class="page-header">Menu</h2>
+										<p class="text-center">Customizable Slide Menu</p>
+										<div class="col-md-2">
+											<button id="showTop" class="btn btn-default btn-block">Top Menu</button>
+										</div>
+										<div class="col-md-2">
+											<button id="showBottom" class="btn btn-default btn-block">Bottom Menu</button>
+										</div>
+										<div class="col-md-2">
+											<button id="showLeft" class="btn btn-default btn-block">Left Menu</button>
+										</div>
+										<div class="col-md-2">
+											<button id="showRight" class="btn btn-default btn-block">Right Menu</button>
+										</div>
+										<div class="col-md-2">
+											<button id="showLeftPush" class="btn btn-default btn-block">Push Left Menu</button>
+										</div>
+										<div class="col-md-2">
+											<button id="showRightPush" class="btn btn-default btn-block">Push Right Menu</button>
+										</div>
+
+									<br>
+
+									<h2 class="page-header">Static Table</h2>
+										<div class="col-md-6">
+											<p class="text-center">Basic Table</p>
+											<hr>
+											<table class="table">
+												<thead>
+													<tr>
+														<th>No</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Fullname</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>Aria</td>
+														<td>Coldheart</td>
+														<td>Aria Colheart</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>Shiva</td>
+														<td>Helvansia</td>
+														<td>Shiva Helvansia</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>Tromp</td>
+														<td>Calcura</td>
+														<td>Tromp Calcura</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="col-md-6">
+											<p class="text-center">Bordered Table</p>
+											<hr>
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th>No</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Fullname</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>Aria</td>
+														<td>Coldheart</td>
+														<td>Aria Colheart</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>Shiva</td>
+														<td>Helvansia</td>
+														<td>Shiva Helvansia</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>Tromp</td>
+														<td>Calcura</td>
+														<td>Tromp Calcura</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="col-md-6">
+											<p class="text-center">Table Striped</p>
+											<hr>
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>No</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Fullname</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>Aria</td>
+														<td>Coldheart</td>
+														<td>Aria Colheart</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>Shiva</td>
+														<td>Helvansia</td>
+														<td>Shiva Helvansia</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>Tromp</td>
+														<td>Calcura</td>
+														<td>Tromp Calcura</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="col-md-6">
+											<p class="text-center">Paneling Table</p>
+											<hr>
+											<div class="panel panel-default">
+												<div class="panel-heading">Paneling Table without body</div>
+												<table class="table">
+													<thead>
+														<tr>
+															<th>No</th>
+															<th>First Name</th>
+															<th>Last Name</th>
+															<th>Fullname</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>1</td>
+															<td>Aria</td>
+															<td>Coldheart</td>
+															<td>Aria Colheart</td>
+														</tr>
+														<tr>
+															<td>2</td>
+															<td>Shiva</td>
+															<td>Helvansia</td>
+															<td>Shiva Helvansia</td>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>Tromp</td>
+															<td>Calcura</td>
+															<td>Tromp Calcura</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="panel panel-default">
+												<div class="panel-heading">Paneling Table</div>
+												<div class="panel-body">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+													proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											</div>
+												<table class="table">
+													<thead>
+														<tr>
+															<th>No</th>
+															<th>First Name</th>
+															<th>Last Name</th>
+															<th>Fullname</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>1</td>
+															<td>Aria</td>
+															<td>Coldheart</td>
+															<td>Aria Colheart</td>
+														</tr>
+														<tr>
+															<td>2</td>
+															<td>Shiva</td>
+															<td>Helvansia</td>
+															<td>Shiva Helvansia</td>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>Tromp</td>
+															<td>Calcura</td>
+															<td>Tromp Calcura</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+									<h2 class="page-header">Smart Table</h2>
+										<div class="col-md-12">
+											<table id="smartTable" class="display table">
+												<thead>
+													<tr>
+														<th>No</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Fullname</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>Aria</td>
+														<td>Coldheart</td>
+														<td>Aria Colheart</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>Shiva</td>
+														<td>Helvansia</td>
+														<td>Shiva Helvansia</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>Tromp</td>
+														<td>Calcura</td>
+														<td>Tromp Calcura</td>
+													</tr>
+													<tr>
+														<td>4</td>
+														<td>Aria</td>
+														<td>Coldheart</td>
+														<td>Aria Colheart</td>
+													</tr>
+													<tr>
+														<td>5</td>
+														<td>Shiva</td>
+														<td>Helvansia</td>
+														<td>Shiva Helvansia</td>
+													</tr>
+													<tr>
+														<td>6</td>
+														<td>Tromp</td>
+														<td>Calcura</td>
+														<td>Tromp Calcura</td>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>Aria</td>
+														<td>Coldheart</td>
+														<td>Aria Colheart</td>
+													</tr>
+													<tr>
+														<td>8</td>
+														<td>Shiva</td>
+														<td>Helvansia</td>
+														<td>Shiva Helvansia</td>
+													</tr>
+													<tr>
+														<td>9</td>
+														<td>Tromp</td>
+														<td>Calcura</td>
+														<td>Tromp Calcura</td>
+													</tr>
+													<tr>
+														<td>10</td>
+														<td>Aria</td>
+														<td>Coldheart</td>
+														<td>Aria Colheart</td>
+													</tr>
+													<tr>
+														<td>11</td>
+														<td>Shiva</td>
+														<td>Helvansia</td>
+														<td>Shiva Helvansia</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>Tromp</td>
+														<td>Calcura</td>
+														<td>Tromp Calcura</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+									<h2 class="page-header">Alert</h2>
+										<div class="col-md-12">
+											<div role="alert" class="alert alert-success">
+												<strong>Well done!</strong> You successfully read this important alert message.
+											</div>
+											<div role="alert" class="alert alert-info">
+												<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+											</div>
+											<div role="alert" class="alert alert-warning">
+												<strong>Warning!</strong> Better check yourself, you're not looking too good.
+											</div>
+											<div role="alert" class="alert alert-danger">
+												<strong>Oh snap!</strong> Change a few things up and try submitting again.
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<button id="alert-done" class="btn btn-success btn-block">Alert Done !</button>
+											</div>
+											<div class="col-md-3">
+												<button id="alert-info" class="btn btn-info btn-block">Alert Info !</button>
+											</div>
+											<div class="col-md-3">
+												<button id="alert-warning" class="btn btn-warning btn-block">Alert Warning !</button>
+											</div>
+											<div class="col-md-3">
+												<button id="alert-danger" class="btn btn-danger btn-block">Alert Danger !</button>
+											</div>
+											<br>
+										</div>
+
+									<h2 class="page-header">Javascript Sweet Alert</h2>
+										<div class="col-md-12">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td> 
+															<button id="swal-1" class="btn btn-primary btn-sm btn-block">Try !</button> 
+														</td>
+														<td style="vertical-align: middle;">A basic message</td>
+													</tr>
+													<tr>
+														<td> 
+															<button class="btn btn-primary btn-sm btn-sm btn-block">Try !</button> 
+														</td>
+														<td style="vertical-align: middle;" id="swal-2">A title with a text under</td>
+													</tr>
+													<tr>
+														<td> 
+															<button class="btn btn-primary btn-sm btn-sm btn-block">Try !</button> 
+														</td>
+														<td style="vertical-align: middle;" id="swal-3">A success message!</td>
+													</tr>
+													<tr>
+														<td> 
+															<button class="btn btn-primary btn-sm btn-sm btn-block">Try !</button> 
+														</td>
+														<td style="vertical-align: middle;" id="swal-4">A message with auto close timer</td>
+													</tr>
+													<tr>
+														<td> 
+															<button class="btn btn-primary btn-sm btn-sm btn-block">Try !</button> 
+														</td>
+														<td style="vertical-align: middle;" id="swal-5">A warning message, with a function attached to the "Confirm"-button...</td>
+													</tr>
+													<tr>
+														<td> 
+															<button class="btn btn-primary btn-sm btn-sm btn-block">Try !</button> 
+														</td>
+														<td style="vertical-align: middle;" id="swal-6">... and by passing a parameter, you can execute something else for "Cancel".</td>
+													</tr>
+													<tr>
+														<td> 
+															<button class="btn btn-primary btn-sm btn-sm btn-block">Try !</button> 
+														</td>
+														<td style="vertical-align: middle;" id="swal-7">A message with a custom icon</td>
+													</tr>
+												</tbody>	
+											</table>
+										</div>
+
+								</section>
+								<footer class="footer">
+									<div class="panel panel-single panel-default">
+										<div class="panel-body text-center">
+											<ul class="pagination pagination-single">
+												<li><a href="#"><</a></li>
+												<li><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">5</a></li>
+												<li><a href="#">></a></li>
+											</ul>
+										</div>
+									</div>
+								</footer> 
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+</section>
+
+
+<nav class="sidebar sidebar-vertical sidebar-left sidebar-fix" id="sidebar-left">
+	<h3><i class="icon fa fa-life-saver"></i> UI Kits</h3>
+	<div class="menu-wrapper scrollable">
+		<div class="menu">
+			<a class="callmenu-1" data-menu="submenu">
+				<i class="icon fa fa-suitcase"></i> Components
+			</a>
+			<div id="submenu-1" class="collapse submenu">
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Typography</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Slide Menu</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Alert</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Animation</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Button</li>
+				</a>
+								<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Callout</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Color</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Grid</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> List Group</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Nav</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Panel</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cube submenu-icon"></i> Progress Bar</li>
+				</a>
+
+
+			</div>
+		</div>
+		<div class="menu">
+			<a class="callmenu-2" data-menu="submenu">
+				<i class="icon fa fa-edit"></i> Form
+			</a>
+			<div id="submenu-2" class="collapse submenu">
+				<a href="" class="submenu-menu">
+					<i class="fa fa-columns submenu-icon"></i> Form Layout</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-check-square-o submenu-icon"></i> Form Validation</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-cog submenu-icon"></i> Form Decoration</li>
+				</a>
+			</div>
+		</div>
+		<div class="menu">
+			<a class="callmenu-3" data-menu="submenu">
+				<i class="icon fa fa-table"></i> Table
+			</a>
+			<div id="submenu-3" class="collapse submenu">
+				<a href="" class="submenu-menu">
+					<i class="fa fa-th-list submenu-icon"></i> Static Table</li>
+				</a>
+				<a href="" class="submenu-menu">
+					<i class="fa fa-indent submenu-icon"></i> Smart Table</li>
+				</a>
+			</div>
+		</div>
+		<div class="menu">
+			<a class="callmenu" data-menu="submenu">
+				<i class="icon fa fa-line-chart"></i> Chart
+			</a>
+			</div>
+		</div>
+	</div>
+</nav>
+<nav class="sidebar sidebar-vertical sidebar-right sidebar-fix" id="sidebar-right">
+	<h3>Right Menu</h3>
+	<a href=""><i class="fa fa-align-justify"></i> Sidebar</a>
+</nav>
+<nav class="sidebar sidebar-horizontal sidebar-top sidebar-fix" id="sidebar-top">
+	<h3>Top Menu</h3>
+	<a href=""><i class="fa fa-align-justify"></i> Sidebar</a>
+</nav>
+<nav class="sidebar sidebar-horizontal sidebar-bottom" id="sidebar-bottom">
+	<h3>Bottom Menu</h3>
+	<a href=""><i class="fa fa-align-justify"></i> Sidebar</a>
+</nav>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#swal-1").click(function(){
+      swal("Here's a message!");
+    });
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#alert-done").click(function(){
+       $.growl({
+				title: '<strong>Well done! :</strong> ',
+				message: 'You successfully read this important alert message. '
+			},{
+				type: 'success'
+			});
+    });
+    $("#alert-info").click(function(){
+       $.growl({
+				title: '<strong>Heads up! :</strong> ',
+				message: 'This alert needs your attention, but its not super important.  '
+			},{
+				type: 'info'
+			});
+    });
+    $("#alert-warning").click(function(){
+       $.growl({
+				title: '<strong>Warning!  :</strong> ',
+				message: 'Better check yourself, you re not looking too good.   '
+			},{
+				type: 'warning'
+			});
+    });
+    $("#alert-danger").click(function(){
+       $.growl({
+				title: '<strong>Oh snap !  :</strong> ',
+				message: 'Change a few things up and try submitting again.    '
+			},{
+				type: 'danger'
+			});
+    });
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $('#smartTable').DataTable();
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".callmenu-1").click(function(){
+       $("#submenu-1").collapse('toggle');
+    });
+    $(".callmenu-2").click(function(){
+       $("#submenu-2").collapse('toggle');
+    });
+    $(".callmenu-3").click(function(){
+       $("#submenu-3").collapse('toggle');
+    });
+	});
+</script>
+
+<script type="text/javascript">
+	var menuLeft = document.getElementById( 'sidebar-left' ),
+			menuRight = document.getElementById( 'sidebar-right' ),
+			menuTop = document.getElementById( 'sidebar-top' ),
+			menuBottom = document.getElementById( 'sidebar-bottom' ),
+			showLeft = document.getElementById( 'showLeft' ),
+			showRight = document.getElementById( 'showRight' ),
+			showTop = document.getElementById( 'showTop' ),
+			showBottom = document.getElementById( 'showBottom' ),
+			showLeftPush = document.getElementById( 'showLeftPush' ),
+			showRightPush = document.getElementById( 'showRightPush' ),
+			body = document.body;
+
+		showLeft.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuLeft, 'sidebar-open' );
+			classie.remove( body, 'sidebar-push-toright' );
+			classie.remove( menuRight, 'sidebar-open' );
+			classie.remove( menuBottom, 'sidebar-open' );
+			classie.remove( menuTop, 'sidebar-open' );
+			disableOther( 'showLeft' );
+		};
+		showRight.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuRight, 'sidebar-open' );
+			classie.remove( body, 'sidebar-push-toleft' );
+			classie.remove( menuLeft, 'sidebar-open' );
+			classie.remove( menuBottom, 'sidebar-open' );
+			classie.remove( menuTop, 'sidebar-open' );
+			disableOther( 'showRight' );
+		};
+		showTop.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuTop, 'sidebar-open' );
+			classie.remove( menuLeft, 'sidebar-open' );
+			classie.remove( menuBottom, 'sidebar-open' );
+			classie.remove( menuRight, 'sidebar-open' );
+			classie.remove( body, 'sidebar-push-toright' );
+			classie.remove( body, 'sidebar-push-toleft' );
+			disableOther( 'showTop' );
+		};
+		showBottom.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuBottom, 'sidebar-open' );
+			classie.remove( menuLeft, 'sidebar-open' );
+			classie.remove( menuTop, 'sidebar-open' );
+			classie.remove( menuRight, 'sidebar-open' );
+			classie.remove( body, 'sidebar-push-toright' );
+			classie.remove( body, 'sidebar-push-toleft' );
+			disableOther( 'showBottom' );
+		};
+		showLeftPush.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( body, 'sidebar-push-toright' );
+			classie.toggle( menuLeft, 'sidebar-open' );
+			classie.remove( menuRight, 'sidebar-open' );
+			classie.remove( menuBottom, 'sidebar-open' );
+			classie.remove( menuTop, 'sidebar-open' );
+			disableOther( 'showLeftPush' );
+		};
+		showRightPush.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( body, 'sidebar-push-toleft' );
+			classie.toggle( menuRight, 'sidebar-open' );
+			classie.remove( menuLeft, 'sidebar-open' );
+			classie.remove( menuBottom, 'sidebar-open' );
+			classie.remove( menuTop, 'sidebar-open' );
+			disableOther( 'showRightPush' );
+		};
+
+		function disableOther( button ) {
+			if( button !== 'showLeft' ) {
+				classie.toggle( showLeft, 'disabled' );
+			}
+			if( button !== 'showRight' ) {
+				classie.toggle( showRight, 'disabled' );
+			}
+			if( button !== 'showTop' ) {
+				classie.toggle( showTop, 'disabled' );
+			}
+			if( button !== 'showBottom' ) {
+				classie.toggle( showBottom, 'disabled' );
+			}
+			if( button !== 'showLeftPush' ) {
+				classie.toggle( showLeftPush, 'disabled' );
+			}
+			if( button !== 'showRightPush' ) {
+				classie.toggle( showRightPush, 'disabled' );
+			}
+		}
+</script>
+</body>
+</html>

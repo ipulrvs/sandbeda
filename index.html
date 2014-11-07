@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="app">
+<head>
+	<title>New Web Project</title>
+
+	<!-- Style Begin -->
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/hover.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+	<!-- Style End -->
+
+	<!-- Plugin Begin -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<script src="js/sidebar.js"></script>
+	<!-- Plugin End -->
+
+	<style type="text/css">
+		.submenu {
+			background: #000000;
+		}
+
+		.submenu-menu {
+			font-size: 15px !important;
+			padding: 10px !important;
+			margin-left: 15px;
+		}
+
+		.submenu-menu:hover {
+			border-right: 5px solid #ff7518;
+			border-radius: 0.5px;
+			padding-left: 20px !important;
+			background: #000000 !important;
+			-webkit-transition: all 0.2s ease-out;
+       -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+         -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+		}
+
+		.submenu-icon {
+			width: 15px;
+		}
+
+		.icon {
+			width: 25px;
+		}
+
+		.pagination li a {
+			padding: 5px 10px !important;
+		}
+
+		.pagination li a:hover {
+			color: #ff7518 !important;
+		}
+
+		.panel-body {
+			padding: 10px !important;
+		}
+
+		a:hover, a:active, a:visited, a:link {
+			text-decoration: none;
+		}
+
+		.navbar-border {
+			border-bottom: 3px solid #D25500 !important;
+		}
+
+		.orange {
+			background: #ff7518;
+		}
+
+		.nmtop5 {
+			margin-top: -5px;
+		}
+		.nmtop10 {
+			margin-top: -10px;
+		}
+		.nmtop15 {
+			margin-top: -15px;
+		}
+		.nmtop20 {
+			margin-top: -20px;
+		}
+
+		.nm {
+			margin: 0px !important;
+		}
+
+		.mtop5 {
+			margin-top: 5px;
+		}
+		.mtop10 {
+			margin-top: 10px;
+		}
+		.mtop15 {
+			margin-top: 15px;
+		}
+		.mtop20 {
+			margin-top: 20px;
+		}
+		.mtop25 {
+			margin-top: 25px;
+		}
+		.mtop50 {
+			margin-top: 50px;
+		}
+
+		.inleft {
+			float: left;
+		}
+
+		.inright {
+			float: right;
+		}
+	</style>
+</head>
+<body class="sidebar-push">
+
+<section class="vbox">
+
+	<header class="header nmtop">
+		<div class="navbar navbar-default navbar-fixed-top navbar-border">
+			<div class="navbar-header">
+				<a class="navbar-brand navbar-brand-title">App.Name 
+					<i class="icon glyphicon glyphicon-home inright"></i>
+				</a>
+				<button data-target="#navbar-main" data-toggle="collapse" type="button" class="navbar-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div id="navbar-main" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+					<a href="" data-toggle="dropdown" class="dropdown-toggle">Link <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="">Dropdown Link</a></li>
+								<li class="divider"></li>
+								<li><a href="">Dropdown Link</a></li>
+						</ul>
+					</li>
+					<li><a href="">Link</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" style="margin: 0px;">
+					<li><a href="">Link</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<section class="hbox stretch">
+
+			<section id="content" style="background: green;">
+				<section class="vbox">
+					<header class="header">
+						<ol class="breadcrumb">
+							<li><a href="#">Home</a></li>
+							<li class="active">Dashboard</li>
+						</ol>
+					</header>
+					<section class="scrollable">
+					
+						<section>
+							<h2>Slide Menus</h2>
+							<!-- Class "sidebar-open" gets applied to menu -->
+							<button id="showLeft">Show/Hide Left Slide Menu</button>
+							<button id="showRight">Show/Hide Right Slide Menu</button>
+							<button id="showTop">Show/Hide Top Slide Menu</button>
+							<button id="showBottom">Show/Hide Bottom Slide Menu</button>
+						</section>
+						<section class="buttonset">
+							<h2>Push Menus</h2>
+							<!-- Class "sidebar-open" gets applied to menu and "sidebar-push-toleft" or "sidebar-push-toright" to the body -->
+							<button id="showLeftPush">Show/Hide Left Push Menu</button>
+							<button id="showRightPush">Show/Hide Right Push Menu</button>
+						</section>
+						<section>
+							<h2>Slide Menus</h2>
+							<!-- Class "sidebar-open" gets applied to menu -->
+							<button id="showLeft">Show/Hide Left Slide Menu</button>
+							<button id="showRight">Show/Hide Right Slide Menu</button>
+							<button id="showTop">Show/Hide Top Slide Menu</button>
+							<button id="showBottom">Show/Hide Bottom Slide Menu</button>
+						</section>
+						<section class="buttonset">
+							<h2>Push Menus</h2>
+							<!-- Class "sidebar-open" gets applied to menu and "sidebar-push-toleft" or "sidebar-push-toright" to the body -->
+							<button id="showLeftPush">Show/Hide Left Push Menu</button>
+							<button id="showRightPush">Show/Hide Right Push Menu</button>
+						</section>
+						<section>
+							<h2>Slide Menus</h2>
+							<!-- Class "sidebar-open" gets applied to menu -->
+							<button id="showLeft">Show/Hide Left Slide Menu</button>
+							<button id="showRight">Show/Hide Right Slide Menu</button>
+							<button id="showTop">Show/Hide Top Slide Menu</button>
+							<button id="showBottom">Show/Hide Bottom Slide Menu</button>
+						</section>
+						<section class="buttonset">
+							<h2>Push Menus</h2>
+							<!-- Class "sidebar-open" gets applied to menu and "sidebar-push-toleft" or "sidebar-push-toright" to the body -->
+							<button id="showLeftPush">Show/Hide Left Push Menu</button>
+							<button id="showRightPush">Show/Hide Right Push Menu</button>
+						</section>
+						<section>
+							<h2>Slide Menus</h2>
+							<!-- Class "sidebar-open" gets applied to menu -->
+							<button id="showLeft">Show/Hide Left Slide Menu</button>
+							<button id="showRight">Show/Hide Right Slide Menu</button>
+							<button id="showTop">Show/Hide Top Slide Menu</button>
+							<button id="showBottom">Show/Hide Bottom Slide Menu</button>
+						</section>
+						<section class="buttonset">
+							<h2>Push Menus</h2>
+							<!-- Class "sidebar-open" gets applied to menu and "sidebar-push-toleft" or "sidebar-push-toright" to the body -->
+							<button id="showLeftPush">Show/Hide Left Push Menu</button>
+							<button id="showRightPush">Show/Hide Right Push Menu</button>
+						</section>
+						<section>
+							<h2>Slide Menus</h2>
+							<!-- Class "sidebar-open" gets applied to menu -->
+							<button id="showLeft">Show/Hide Left Slide Menu</button>
+							<button id="showRight">Show/Hide Right Slide Menu</button>
+							<button id="showTop">Show/Hide Top Slide Menu</button>
+							<button id="showBottom">Show/Hide Bottom Slide Menu</button>
+						</section>
+						<section class="buttonset">
+							<h2>Push Menus</h2>
+							<!-- Class "sidebar-open" gets applied to menu and "sidebar-push-toleft" or "sidebar-push-toright" to the body -->
+							<button id="showLeftPush">Show/Hide Left Push Menu</button>
+							<button id="showRightPush">Show/Hide Right Push Menu</button>
+						</section>
+
+					</section>
+					<footer class="footer">
+						<div class="panel panel-default nm">
+						  <div class="panel-body text-center">
+						    <ul class="pagination inright nm">
+									<li><a href="#">&laquo;</a></li>
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+						  </div>
+						</div>
+					</footer>
+				</section>
+			</section>
+
+		</section>
+	</section>
+
+</section>
+
+<nav class="sidebar sidebar-vertical sidebar-left mtop50" id="sidebar-left">
+	<h3>Left Menu</h3>
+	<div class="menu">
+		<a class="callmenu1" data-menu="submenu">
+			<i class="icon fa fa-edit"></i> Widget UI
+		</a>
+		<div id="submenu" class="collapse submenu">
+			<a href="" class="submenu-menu">
+				<i class="fa fa-columns submenu-icon"></i> Sidebar</li>
+			</a>
+			<a href="" class="submenu-menu">
+				<i class="fa fa-columns submenu-icon"></i> Sidebar</li>
+			</a>
+		</div>
+	</div>
+</nav>
+<nav class="sidebar sidebar-vertical sidebar-right mtop50" id="sidebar-right">
+	<h3>Right Menu</h3>
+	<a href=""><i class="fa fa-align-justify"></i> Sidebar</a>
+</nav>
+<nav class="sidebar sidebar-horizontal sidebar-top mtop50" id="sidebar-top">
+	<h3>Top Menu</h3>
+	<a href=""><i class="fa fa-align-justify"></i> Sidebar</a>
+</nav>
+<nav class="sidebar sidebar-horizontal sidebar-bottom" id="sidebar-bottom">
+	<h3>Bottom Menu</h3>
+	<a href=""><i class="fa fa-align-justify"></i> Sidebar</a>
+</nav>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".callmenu1").click(function(){
+       $("#submenu").collapse('toggle');
+    });
+	});
+</script>
+
+<script type="text/javascript">
+	var menuLeft = document.getElementById( 'sidebar-left' ),
+			menuRight = document.getElementById( 'sidebar-right' ),
+			menuTop = document.getElementById( 'sidebar-top' ),
+			menuBottom = document.getElementById( 'sidebar-bottom' ),
+			showLeft = document.getElementById( 'showLeft' ),
+			showRight = document.getElementById( 'showRight' ),
+			showTop = document.getElementById( 'showTop' ),
+			showBottom = document.getElementById( 'showBottom' ),
+			showLeftPush = document.getElementById( 'showLeftPush' ),
+			showRightPush = document.getElementById( 'showRightPush' ),
+			body = document.body;
+
+		showLeft.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuLeft, 'sidebar-open' );
+			classie.remove( body, 'sidebar-push-toright' );
+			classie.remove( menuRight, 'sidebar-open' );
+			classie.remove( menuBottom, 'sidebar-open' );
+			classie.remove( menuTop, 'sidebar-open' );
+			disableOther( 'showLeft' );
+		};
+		showRight.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuRight, 'sidebar-open' );
+			classie.remove( body, 'sidebar-push-toleft' );
+			classie.remove( menuLeft, 'sidebar-open' );
+			classie.remove( menuBottom, 'sidebar-open' );
+			classie.remove( menuTop, 'sidebar-open' );
+			disableOther( 'showRight' );
+		};
+		showTop.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuTop, 'sidebar-open' );
+			classie.remove( menuLeft, 'sidebar-open' );
+			classie.remove( menuBottom, 'sidebar-open' );
+			classie.remove( menuRight, 'sidebar-open' );
+			classie.remove( body, 'sidebar-push-toright' );
+			classie.remove( body, 'sidebar-push-toleft' );
+			disableOther( 'showTop' );
+		};
+		showBottom.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuBottom, 'sidebar-open' );
+			classie.remove( menuLeft, 'sidebar-open' );
+			classie.remove( menuTop, 'sidebar-open' );
+			classie.remove( menuRight, 'sidebar-open' );
+			classie.remove( body, 'sidebar-push-toright' );
+			classie.remove( body, 'sidebar-push-toleft' );
+			disableOther( 'showBottom' );
+		};
+		showLeftPush.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( body, 'sidebar-push-toright' );
+			classie.toggle( menuLeft, 'sidebar-open' );
+			classie.remove( menuRight, 'sidebar-open' );
+			classie.remove( menuBottom, 'sidebar-open' );
+			classie.remove( menuTop, 'sidebar-open' );
+			disableOther( 'showLeftPush' );
+		};
+		showRightPush.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( body, 'sidebar-push-toleft' );
+			classie.toggle( menuRight, 'sidebar-open' );
+			classie.remove( menuLeft, 'sidebar-open' );
+			classie.remove( menuBottom, 'sidebar-open' );
+			classie.remove( menuTop, 'sidebar-open' );
+			disableOther( 'showRightPush' );
+		};
+
+		function disableOther( button ) {
+			if( button !== 'showLeft' ) {
+				classie.toggle( showLeft, 'disabled' );
+			}
+			if( button !== 'showRight' ) {
+				classie.toggle( showRight, 'disabled' );
+			}
+			if( button !== 'showTop' ) {
+				classie.toggle( showTop, 'disabled' );
+			}
+			if( button !== 'showBottom' ) {
+				classie.toggle( showBottom, 'disabled' );
+			}
+			if( button !== 'showLeftPush' ) {
+				classie.toggle( showLeftPush, 'disabled' );
+			}
+			if( button !== 'showRightPush' ) {
+				classie.toggle( showRightPush, 'disabled' );
+			}
+		}
+</script>
+
+</body>
+</html>
